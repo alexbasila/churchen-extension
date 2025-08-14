@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "GIAP • Churchen Button",
+  "description": "Blendet in ChatGPT einen 'Churchen'-Button ein. Markierten/aktuellen Text an GIAP senden und dort automatisch churchen.",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://www.chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
